@@ -1,5 +1,5 @@
 import React from 'react';
- 
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -17,6 +17,7 @@ class Search extends React.Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div className="search-bar form-inline">
         <input
