@@ -3,9 +3,9 @@ import Search from './../components/Search.js'; // component that accepts inout 
 import { connect } from 'react-redux';
 import handleSearchChange from '../actions/search.js';
 
-var SearchContainer = (props) => {
-  return <Search handleSearch={handleSearchInputChange} />
-};
+// var SearchContainer = (props) => {
+//   return <Search handleSearch={handleSearchInputChange} />
+// };
 
 const mapDispatchToProps = dispatch => {
   return {
@@ -18,4 +18,4 @@ const mapDispatchToProps = dispatch => {
 //HINT: use react-redux 'connect' method to generate a container component from
 //state and dispatch mappings.
 
-export default connect (null, mapDispatchToProps)(SearchContainer);
+export default connect (null, mapDispatchToProps)(Search);
